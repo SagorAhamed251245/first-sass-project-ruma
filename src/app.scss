@@ -13,6 +13,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

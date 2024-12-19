@@ -1,4 +1,3 @@
-import React from "react";
 import { FaShareAlt, FaExchangeAlt, FaHeart } from "react-icons/fa";
 
 // Import the JSON data
@@ -21,7 +20,9 @@ function TrendyProduct() {
         {trendyproducts.map((product) => (
           <div key={product.id} className="trendy-card">
             <div className="trendy-product-image">
-              <img src={product.image} alt={product.title} />
+              <div className="img-div">
+                <img src={product.image} alt={product.title} />
+              </div>
 
               {product.badge && (
                 <img className="badge" src={product.badge} alt="Badge" />
